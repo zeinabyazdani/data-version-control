@@ -1,0 +1,5 @@
+[core]
+    analytics = false
+    remote = remote-storage
+['remote "remote-storage"']
+    url = /mnt/e/MLOps/DVC/remote-storage
