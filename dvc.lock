@@ -34,22 +34,22 @@ stages:
       isexec: true
     - path: src/train.py
       hash: md5
-      md5: 8afd0b487365179d1b8bcca7e57a64cd
-      size: 1324
+      md5: fba02db450a577e4eef0ce583a5dca3e
+      size: 1325
       isexec: true
     outs:
     - path: model/model.joblib
       hash: md5
-      md5: 2bfdc0432e592f849048c43f1330bcd8
-      size: 241149
+      md5: a96ee182bc245d361c9cd49f2208b23d
+      size: 1843609
       isexec: true
   evaluate:
     cmd: python src/evaluate.py
     deps:
     - path: model/model.joblib
       hash: md5
-      md5: 2bfdc0432e592f849048c43f1330bcd8
-      size: 241149
+      md5: a96ee182bc245d361c9cd49f2208b23d
+      size: 1843609
       isexec: true
     - path: src/evaluate.py
       hash: md5
@@ -59,6 +59,6 @@ stages:
     outs:
     - path: metrics/accuracy.json
       hash: md5
-      md5: d4cf73d17677921236566d03aeea435d
+      md5: e5f81280df4a365ece8e2813e2dbe8a2
       size: 32
       isexec: true
